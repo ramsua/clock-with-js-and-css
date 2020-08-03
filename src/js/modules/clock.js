@@ -1,15 +1,23 @@
+import { rootVars } from "../config/global_vars";
 import { getCurrentTime as date } from "./date";
 
-const clock = document.getElementById('clock');
-
-const elem = () => {
+const analogicClock = () => {
 
     const time = date()
-    clock.textContent = `${time.hours} : ${time.minutes} : ${time.seconds}`
+
+    rootVars.setProperty('--ht-hours', `${time.hours * 30}deg`)
+    rootVars.setProperty('--ht-minutes', `${time.minutes * 6}deg`)
+    rootVars.setProperty('--ht-seconds', `${time.seconds * 6}deg`)
 
     setInterval(() => {
+
         const time = date()
-        clock.textContent = `${time.hours} : ${time.minutes} : ${time.seconds}`
+
+        rootVars.setProperty('--ht-hours', `${time.hours * 30}deg`)
+        rootVars.setProperty('--ht-minutes', `${time.minutes * 6}deg`)
+        rootVars.setProperty('--ht-seconds', `${time.seconds * 6}deg`)
+
     }, 1000);
 }
-export { elem }
+
+export { analogicClock }

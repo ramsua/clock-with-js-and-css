@@ -3,8 +3,8 @@
 .clock{
     position: relative;
 
-    width: $size;
-    height: $size;
+    width: var(--size);
+    height: var(--size);
 
     margin-right: auto;
     margin-left: auto;
@@ -26,12 +26,12 @@
         background-color: $main-color;
     }
     &::before{
-        width: $size / 20;
-        height: $size / 20;
+        width: calc(var(--size + 20px));
+        height: calc(var(--size + 20px));
     }
     &::after{
-        width: $size + 10px;
-        height: $size + 10px;
+        width: calc(var(--size) + 10px);
+        height: calc(var(--size) + 10px);
         z-index: -10;
     }
 
@@ -47,7 +47,7 @@
             transform: rotate(var(--ht-hours));
 
             width: 6px;
-            height: $size / 5;
+            height: calc(var(--size) / 5);
         }
 
         &--minutes{
@@ -55,7 +55,7 @@
             transform: rotate(var(--ht-minutes));
 
             width: 4px;
-            height: $size / 3.9;
+            height: calc(var(--size) / 3.9);
         }
 
         &--seconds{
@@ -63,14 +63,14 @@
             transform: rotate(var(--ht-seconds));
 
             width: 2px;
-            height: $size / 2.8;
+            height: calc(var(--size) / 2.8);
         }
     }
 
     &__indice {
         position: absolute;
         left: 50%;
-        transform-origin: 0 $size / 2;
+        transform-origin: 0 calc(var(--size) / 2);
 
         width: 4px;
         height: 10px;
@@ -89,12 +89,12 @@
                     top: 220%;
                     left: -20px; // La mitad del width
 
-                    width: $size / 10;
-                    height: $size / 10;
+                    width: calc(var(--size) / 10);
+                    height: calc(var(--size) / 10);
 
                     color: $light-color;
                     text-align: center;
-                    font-size: 2.5rem;
+                    font-size: calc(var(--size) / 10);
 
                     transform: rotate(360deg - ($i * 30deg));
                 }

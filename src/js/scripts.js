@@ -1,5 +1,5 @@
-import { elem } from "./modules/clock";
+import { analogicClock } from "./modules/clock";
 
 document.addEventListener('DOMContentLoaded', () => {
-    elem()
+    analogicClock()
 })

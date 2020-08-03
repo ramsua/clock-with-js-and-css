@@ -3,12 +3,21 @@ $dark-color: #141414;
 $light-color: #e1e1e1;
 $main-color: #44ba7d;
 
-// Measurements
-$size: 400px;
 
 :root{
+    // Measurements
+    --size: 200px;
+
     // Hands Turns
     --ht-hours:0;
     --ht-minutes:0;
     --ht-seconds:0;
+
+    @media screen and (min-width: 450px) {
+        --size: 350px;
+    }
+
+    @media screen and (min-width: 750px) {
+        --size: 550px;
+    }
 }
