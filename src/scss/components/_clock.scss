@@ -87,7 +87,7 @@
                     content: "#{$i}";
                     position: absolute;
                     top: 220%;
-                    left: -20px; // La mitad del width
+                    left: -10px; // La mitad del width
 
                     width: calc(var(--size) / 10);
                     height: calc(var(--size) / 10);
@@ -97,6 +97,14 @@
                     font-size: calc(var(--size) / 10);
 
                     transform: rotate(360deg - ($i * 30deg));
+
+                    @media screen and (min-width: 450px) {
+                        left: -17.5px
+                    }
+
+                    @media screen and (min-width: 750px) {
+                        left: -27.5px
+                    }
                 }
             }
         }
