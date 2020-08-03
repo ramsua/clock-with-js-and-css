@@ -26,8 +26,8 @@
         background-color: $main-color;
     }
     &::before{
-        width: calc(var(--size + 20px));
-        height: calc(var(--size + 20px));
+        width: calc(var(--size) / 20);
+        height: calc(var(--size) / 20);
     }
     &::after{
         width: calc(var(--size) + 10px);
