@@ -1,0 +1,104 @@
+
+
+.clock{
+    position: relative;
+
+    width: $size;
+    height: $size;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 50%;
+
+    background-color: $dark-color;
+
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+
+        transform: translate(-50%, 50%);
+
+        border-radius: 50%;
+        background-color: $main-color;
+    }
+    &::before{
+        width: $size / 20;
+        height: $size / 20;
+    }
+    &::after{
+        width: $size + 10px;
+        height: $size + 10px;
+        z-index: -10;
+    }
+
+    &__hands{
+        position: absolute;
+        bottom: 50%;
+        transform-origin: bottom center;
+
+        background-color: $main-color;
+
+        &--hours{
+            left: calc(50% - 3px);
+            transform: rotate(var(--ht-hours));
+
+            width: 6px;
+            height: $size / 5;
+        }
+
+        &--minutes{
+            left: calc(50% - 2px);
+            transform: rotate(var(--ht-minutes));
+
+            width: 4px;
+            height: $size / 3.9;
+        }
+
+        &--seconds{
+            left: calc(50% - 1px);
+            transform: rotate(var(--ht-seconds));
+
+            width: 2px;
+            height: $size / 2.8;
+        }
+    }
+
+    &__indice {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 $size / 2;
+
+        width: 4px;
+        height: 10px;
+
+        background: $light-color;
+    
+        @for $i from 1 through 12{
+
+            &:nth-child(#{$i}){
+
+                transform: rotate($i * 30deg);
+        
+                &::before {
+                    content: "#{$i}";
+                    position: absolute;
+                    top: 220%;
+                    left: -20px; // La mitad del width
+
+                    width: $size / 10;
+                    height: $size / 10;
+
+                    color: $light-color;
+                    text-align: center;
+                    font-size: 2.5rem;
+
+                    transform: rotate(360deg - ($i * 30deg));
+                }
+            }
+        }
+    }
+}

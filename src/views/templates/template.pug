@@ -1,0 +1,14 @@
+block config
+    include ../config/vars
+doctype html
+html(lang="es")
+    head
+        title= pageTitle
+        meta(charset="utf-8")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    body
+        header.main-header
+            h1.main-title= pageTitle
+            
+        main.main-content
+            block main
