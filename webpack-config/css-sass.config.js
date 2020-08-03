@@ -25,7 +25,7 @@ module.exports = {
         {
             loader: 'sass-loader',
             options: {
-                outputStyle: 'compact',
+                outputStyle: 'compressed',
                 sourceMap: true
             }
         }
