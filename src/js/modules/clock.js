@@ -9,15 +9,11 @@ const analogicClock = () => {
     rootVars.setProperty('--ht-minutes', `${time.minutes * 6}deg`)
     rootVars.setProperty('--ht-seconds', `${time.seconds * 6}deg`)
 
-    // setInterval(() => {
+    setInterval(() => {
 
-    //     const time = date()
+        analogicClock()
 
-    //     rootVars.setProperty('--ht-hours', `${time.hours * 30}deg`)
-    //     rootVars.setProperty('--ht-minutes', `${time.minutes * 6}deg`)
-    //     rootVars.setProperty('--ht-seconds', `${time.seconds * 6}deg`)
-
-    // }, 1000);
+    }, 1000);
 }
 
 export { analogicClock }
