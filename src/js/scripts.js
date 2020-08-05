@@ -4,4 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     analogicClock()
 
+    setInterval(() => {
+
+        analogicClock()
+
+    }, 1000);
+
 })
