@@ -1,13 +1,13 @@
 # Clock with JavaScript and CSS
 
-Requirements - **english** - [See in browser](https://ramsua.github.io/clock-with-js-and-css/)
+Requirements - **english** - [See in browser](https://rr69sport.github.io/clock-with-js-and-css/)
 
 - An analog clock should be made to mark the current time.
 - The use of images is not allowed.
 - The use of frameworks or libraries is not allowed.
 - Template engines or preprocessors can be used.
 
-Requerimientos - **español** - [Ver en el navegadork](https://ramsua.github.io/clock-with-js-and-css/)
+Requerimientos - **español** - [Ver en el navegadork](https://rr69sport.github.io/clock-with-js-and-css/)
 
 - Se debe hacer un reloj analógico que marque la hora actual.
 - No está permitido el uso de imágenes.
