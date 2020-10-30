@@ -13,3 +13,5 @@ Requerimientos - **español** - [Ver en el navegadork](https://rr69sport.github.
 - No está permitido el uso de imágenes.
 - No está permitido el uso de frameworks ni librerías.
 - Se pueden usar motores de plantilla o preprocesadores.
+
+[![GitHub issues](https://img.shields.io/github/issues/rr69sport/clock-with-js-and-css)](https://github.com/rr69sport/clock-with-js-and-css/issues) [![GitHub license](https://img.shields.io/github/license/rr69sport/clock-with-js-and-css)](https://github.com/rr69sport/clock-with-js-and-css/blob/master/LICENSE)
